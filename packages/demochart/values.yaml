@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: madhusudhan97/dataset-kubernetes1
+  repository: madhusudhan97/dataset10
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
@@ -49,6 +49,7 @@ ingress:
   hosts:
     - host: chart-example.local
       paths:
+      
         - path: /
           pathType: ImplementationSpecific
   tls: []
